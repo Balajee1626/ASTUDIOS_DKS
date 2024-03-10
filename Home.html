@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Comatible" content="IE=edge">
+  <meta name="Viewpoint" content="width=device-width,initial-scale=1.0">
+  <title  >Studio</title>
+  <link rel="icon" type="image/jpg"  href="A.jpg">
+  <!--<link rel="stylesheet" href="home.css">-->
+  
+</head>
+
+<body>
+    <p>k</p>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<select id="sizeSelect">
+  <option>Select size</option>
+  <option>Small</option>
+  <option>Medium</option>
+  <option>Large</option>
+  <option>Custom</option>
+</select>
+
+<select id="heightSelect" style="display: none;">
+  <option>Select height</option>
+  <option>10cm</option>
+  <option>20cm</option>
+  <option>30cm</option>
+</select>
+
+<select id="widthSelect" style="display: none;">
+  <option>Select width</option>
+  <option>10cm</option>
+  <option>20cm</option>
+  <option>30cm</option>
+</select>
+
+<input type="number" id="quantityInput" value="1">
+<a href="shop.html"><button class="normal">buy now</button></a>
+
+<h4>Product Details</h4>
+<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias mollitia, necessitatibus velit</span>
+ officiis quaerat distinctio amet nihil ut optio corrupti ipsam fugiat nobis placeat odit similique accusamus in rerum!</span>
+
+
+/* CSS for mobile devices */
+@media only screen and (max-width: 600px) {
+    /* Adjust header layout for mobile */
+    #header {
+      flex-direction: column;
+    }
+    
+    /* Hide the navbar on mobile */
+    #navbar {
+      display: none;
+    }
+    
+    /* Style for mobile navigation */
+    #mobile {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    /* Center align content in hero section for mobile */
+    #hero {
+      text-align: center;
+    }
+    
+    /* Samsung smartphones specific styling */
+    @supports (-webkit-touch-callout: none) {
+      /* Add Samsung-specific styles here */
+      body {
+        background-color: #f0f0f0; /* Light grey background for Samsung devices */
+        color: #333; /* Dark text color for better readability */
+      }
+      
+      /* Adjust font size for better readability on Samsung devices */
+      body {
+        font-size: 16px;
+      }
+      
+      /* Show the navbar on Samsung smartphones */
+      #navbar {
+        display: block;
+      }
+      
+      
+    }
+  }

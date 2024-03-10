@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio</title>
+  <link rel="icon" type="image/jpg" href="A.jpg">
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+  <section id="header">
+    <a href="#"><img src="img/A DESIGN.jpg" class="logo" id="logo"></a>
+    <div>
+      <!-- Navigation bar -->
+      <ul id="navbar">
+        <li><a  href="index.html">Home</a></li>
+        <li><a  class="active" href="shop.html">Shop</a></li>
+        <li><a href="Packages.html">Packages</a></li>
+        <li><a href="anout.html">About</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- Mobile navigation -->
+    <div id="mobile">
+    </div>
+  </section>
+<section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+        <img src="img/2.jpg" width="100%" id="MainImg" alt="">
+
+        <div class="small-img-group">
+            <div class="small-img-col">
+            <img src="img/A4 THE.jpg" width="100%" class="small-img" alt="">
+        </div>
+            <div class="small-img-col">
+            <img src="img/the only way is up.jpg" width="100%" class="small-img" alt="">
+        </div>
+            <div class="small-img-col">
+            <img src="img/A3 2.jpg" width="100%" class="small-img" alt="">
+        </div>
+     
+    </div>
+    </div>
+    <div class="single-pro-details">
+      <h6>Home/Poster</h6>
+      <h4>THE ONLY WAY IS UP - POSTER</h4>
+      <h2 style="color: aliceblue;" id="price">₹ 169</h2>
+      <select id="sizeSelect" onchange="updatePrice()">
+        
+        <option value="A4">A4</option>
+        <option value="A3">A3</option>
+      </select>
+      <input type="number" id="quantity" min="1" value="1" oninput="updatePrice()">
+      <button onclick="buyNow()" class="normal" style="background-color: white;">Buy Now</button>
+      
+      <h4>Product Details</h4>
+      <span style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias mollitia, necessitatibus velit</span>
+    </div>
+   
+</section>
+<!--<section id="product1" class="section-p1">
+
+  <div class="pro-container">
+     Product cards will go here 
+    <div class="pro">
+      <img src="pho1.jpg" alt="">
+      <div class="des">
+        <span>poster</span>
+        <h5>what kind of poster it is</h5>
+      
+      <div class="star">
+         <i><ion-icon name="star"></ion-icon></i>
+         <i><ion-icon name="star"></ion-icon></i>
+         <i><ion-icon name="star"></ion-icon></i>
+         <i><ion-icon name="star"></ion-icon></i>
+         <i><ion-icon name="star"></ion-icon></i>
+      </div>
+      <h4>₹ 599</h4>
+  
+    </div>
+    
+  </div>
+  <div class="pro">
+    <img src="pho1.jpg" alt="">
+    <div class="des">
+      <span>poster</span>
+      <h5>what kind of poster it is</h5>
+    
+    <div class="star">
+       <i><ion-icon name="star"></ion-icon></i>
+       <i><ion-icon name="star"></ion-icon></i>
+       <i><ion-icon name="star"></ion-icon></i>
+       <i><ion-icon name="star"></ion-icon></i>
+       <i><ion-icon name="star"></ion-icon></i>
+    </div>
+    <h4>₹ 599</h4>
+  
+  </div>
+  
+  </div>
+  <div class="pro">
+    <img src="pho1.jpg" alt="">
+    <div class="des">
+      <span>poster</span>
+      <h5>what kind of poster it is</h5>
+    
+    <div class="star">
+       <i><ion-icon name="star"></ion-icon></i>
+       <i><ion-icon name="star"></ion-icon></i>
+       <i><ion-icon name="star"></ion-icon></i>
+       <i><ion-icon name="star"></ion-icon></i>
+       <i><ion-icon name="star"></ion-icon></i>
+    </div>
+    <h4>₹ 599</h4>
+  
+  </div>
+  
+  </div>
+  <div class="pro">
+    <img src="pho1.jpg" alt="">
+    <div class="des">
+      <span>poster</span>
+      <h5>what kind of poster it is</h5>
+    
+    <div class="star">
+       <i><ion-icon name="star"></ion-icon></i>
+       <i><ion-icon name="star"></ion-icon></i>
+       <i><ion-icon name="star"></ion-icon></i>
+       <i><ion-icon name="star"></ion-icon></i>
+       <i><ion-icon name="star"></ion-icon></i>
+    </div>
+    <h4>₹ 599</h4>
+  
+  </div>
+  
+  </div>
+
+  </div>
+  </div>
+</section>-->
+
+
+  <!-- Newsletter section -->
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sign up for newsletters</h4>
+      <p>Get E-mail updates about our latest <span>offers</span></p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your email address">
+      <button class="normal">sign up</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="column">
+      <img src="img/white.jpg" alt="" id="log">
+      <p>Contact</p>
+      <p><strong>Address:</strong>  Road Arapalayam,Madurai-16</p>
+      <p><strong>Phone:</strong>+91 9080000155</p>
+      <p><strong>Hours:</strong> 9:00 AM - 6:00 PM</p>
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+        <a href=""></a>   <i><ion-icon name="logo-whatsapp"></ion-icon></i>
+          <i><ion-icon name="logo-facebook"></ion-icon></i>
+          <i><ion-icon name="logo-instagram"></ion-icon></i>
+          
+  
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Condition</a>
+      <a href="#">Contact us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      
+      <a href="#">view cart</a>
+      <a href="#">My wishlist</a>
+      <a href="#">Help</a>
+    </div>
+    <div>
+      <h4>Developer Details</h4>
+      <p><strong>Contact:</strong> Number</p>
+      <P><b>Email:</b> Mail id</P>
+      <p><b>name :</b> name</p>
+    </div>
+    <div class="col install">
+  <h4>Install App</h4>
+  <p>Frowm App store or Google Play</p>
+  <div class="row">
+    <img src="img/sha.jpg" alt="">
+    <img src="img/sha.jpg" alt="">
+  </div>
+  <p>Secured Payment Gateways</p>
+    </div>
+    <div class="copyright">
+      <p> 2024 BJ Developers - Studio Webpage templatee</p>
+    </div>
+  </footer>
+  <script>
+    var MainImg = document.getElementById("MainImg");
+    var smallimg = document.getElementsByClassName("small-img");
+
+    smallimg[0].onclick = function(){
+      MainImg.src= smallimg[0].src;
+    }
+    smallimg[1].onclick = function(){
+      MainImg.src= smallimg[1].src;
+    }
+    smallimg[2].onclick = function(){
+      MainImg.src= smallimg[2].src;
+    }
+    smallimg[3].onclick = function(){
+      MainImg.src= smallimg[3].src;
+    }
+
+
+
+
+    function updatePrice() {
+  var sizeSelect = document.getElementById("sizeSelect");
+  var selectedSize = sizeSelect.options[sizeSelect.selectedIndex].value;
+  var quantity = document.getElementById("quantity").value;
+  var price = 0;
+
+  if (selectedSize === "A3") {
+    price = 299 * quantity; // Price for A3 size
+  } else if (selectedSize === "A4") {
+    price = 169 * quantity; // Price for A4 size
+  }
+
+  document.getElementById("price").textContent = "₹ " + price;
+}
+
+function buyNow() {
+  var sizeSelect = document.getElementById("sizeSelect");
+  var selectedSize = sizeSelect.options[sizeSelect.selectedIndex].value;
+  var quantity = document.getElementById("quantity").value;
+  var price = document.getElementById("price").textContent;
+  var message = "The only way is up " + selectedSize + " size poster. Quantity: " + quantity + ". Total price: " + price;
+
+  // Replace with your WhatsApp number
+  var whatsappNumber = "919080000155";
+  var whatsappMessage = encodeURIComponent(message);
+
+  // Construct the WhatsApp link
+  var whatsappLink = "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
+
+  // Redirect to WhatsApp
+  window.location.href = whatsappLink;
+}
+  </script>
+
+  <!-- Script tags -->
+  <script src="home.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
